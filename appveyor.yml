@@ -19,15 +19,12 @@ init:
 
 install:
   - ps: Install-Product node 10 x64
+  - npm config set "@fortawesome:registry" https://npm.fontawesome.com/
   - git reset --hard HEAD
-  - yarn
+  - npm i
   - node --version
 
 build_script:
-  - yarn build
+  - npm run build
 
 test: off
-
-environment:
-  nodejs_version: "10.3.0"
-  
