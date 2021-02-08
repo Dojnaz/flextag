@@ -27,3 +27,7 @@ build_script:
   - yarn build
 
 test: off
+
+artifacts:
+  - path: build/metadata-editor Setup 1.0.0.exe
+    name: Windows
