@@ -32,7 +32,6 @@ for:
       - path: build/metadata-editor Setup 1.0.0.exe
         name: MacOS
 
-for:
   -
     matrix:
       only: 
