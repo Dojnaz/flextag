@@ -19,12 +19,12 @@ init:
 
 install:
   - ps: Install-Product node 10 x64
-  - npm config set "@fortawesome:registry" https://npm.fontawesome.com/
   - git reset --hard HEAD
-  - npm i
+  - yarn config set "@fortawesome:registry" https://npm.fontawesome.com/
+  - yarn
   - node --version
 
 build_script:
-  - npm run build
+  - yarn build
 
 test: off
