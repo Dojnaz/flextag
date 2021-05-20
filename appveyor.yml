@@ -56,7 +56,7 @@ for:
       - yarn build
     
     artifacts:
-      - path: build/metadata-editor Setup 1.0.0.pkg
+      - path: build/metadata-editor-1.0.0.pkg
         name: MacOS
 
 test: off
