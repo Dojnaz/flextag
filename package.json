@@ -42,7 +42,7 @@
     },
     "mac": {
       "icon": "build/icons/icon.icns",
-      "target":"pkg"
+      "target": "pkg"
     },
     "win": {
       "icon": "build/icons/icon.ico"
@@ -96,6 +96,7 @@
     "node-loader": "^0.6.0",
     "style-loader": "^0.21.0",
     "url-loader": "^1.0.1",
+    "vue-devtools": "^5.1.4",
     "vue-html-loader": "^1.2.4",
     "vue-loader": "^15.2.4",
     "vue-style-loader": "^4.1.0",
