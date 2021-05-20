@@ -7,18 +7,17 @@ import store from './store'
 import AsyncComputed from 'vue-async-computed'
 
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+import MetaAPI from './MetaAPI'
+import ResizableBox from 'vue-resizable-box'
 
 Vue.component('font-awesome-icon', FontAwesomeIcon);
-
-import MetaAPI from './MetaAPI'
 
 if (!process.env.IS_WEB) Vue.use(require('vue-electron'))
 Vue.http = Vue.prototype.$http = axios
 Vue.config.productionTip = false
 
+Vue.use(ResizableBox)
 Vue.use(AsyncComputed)
-
-const fs = require('fs')
 
 /* eslint-disable no-new */
 let vue = new Vue({

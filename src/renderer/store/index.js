@@ -9,7 +9,6 @@ export default new Vuex.Store({
   },
   mutations: {
     select (state, payload) {
-      console.log('test', payload)
       state.selected = payload
     }
   },

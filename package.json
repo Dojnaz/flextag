@@ -56,16 +56,17 @@
     "@fortawesome/free-regular-svg-icons": "^5.15.2",
     "@fortawesome/free-solid-svg-icons": "^5.15.2",
     "@fortawesome/vue-fontawesome": "^2.0.2",
-    "axios": "^0.18.0",
-    "drivelist": "^9.2.4",
+    "axios": "^0.18.1",
+    "less": "^2.3.1",
     "node-id3": "^0.2.2",
-    "vue": "^2.5.16",
+    "vue": "^2.6.11",
     "vue-async-computed": "^3.9.0",
     "vue-electron": "^1.0.6",
+    "vue-interactjs": "^0.1.10",
+    "vue-resizable-box": "^1.2.4",
     "vue-router": "^3.0.1",
     "vuex": "^3.0.1",
-    "vuex-electron": "^1.0.0",
-    "less": "^2.3.1"
+    "vuex-electron": "^1.0.0"
   },
   "devDependencies": {
     "ajv": "^6.5.0",

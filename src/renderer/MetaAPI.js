@@ -66,10 +66,10 @@ window.MetaAPI = {
         if (err) return reject(err)
         let stats = []
         for (let i = 0; i < files.length; i++) {
-          stats.push(window.MetaAPI.stat(path.join(dir,files[i])))
+          stats.push(window.MetaAPI.stat(path.join(dir, files[i])))
         }
         await Promise.all(stats).catch((err) => {
-          
+
         })
         let folders = []
         for (let i = 0; i < stats.length; i++) {
@@ -97,7 +97,7 @@ window.MetaAPI = {
           stats.push(window.MetaAPI.stat(path.join(dir, _files[i])))
         }
         await Promise.all(stats).catch((err) => {
-          
+
         })
         let files = []
         for (let i = 0; i < stats.length; i++) {
