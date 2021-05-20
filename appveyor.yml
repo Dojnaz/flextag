@@ -48,6 +48,7 @@ for:
 
     install:
       - git reset --hard HEAD
+      - npm i yarn -g
       - yarn
       - node --version
 
