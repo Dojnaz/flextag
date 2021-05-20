@@ -30,8 +30,8 @@ for:
       - yarn build
     
     artifacts:
-      - path: build/build/metadata-editor-1.0.0.pkg
-        name: MacOS
+      - path: build/build/metadata-editor-1.0.0.exe
+        name: Windows
 
   -
     matrix:
@@ -56,8 +56,8 @@ for:
       - yarn build
     
     artifacts:
-      - path: build/metadata-editor Setup 1.0.0.exe
-        name: Windows
+      - path: build/metadata-editor Setup 1.0.0.pkg
+        name: MacOS
 
 test: off
 
