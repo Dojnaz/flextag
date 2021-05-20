@@ -30,7 +30,7 @@ for:
       - yarn build
     
     artifacts:
-      - path: build/build/metadata-editor-1.0.0.exe
+      - path: build/build/metadata-editor Setup 1.0.0.exe
         name: Windows
 
   -
