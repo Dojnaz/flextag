@@ -58,7 +58,5 @@ for:
     artifacts:
       - path: build/*
         name: MacOS
-artifacts:
-      - path: build/*
-        name: MacOS
+        
 test: off
