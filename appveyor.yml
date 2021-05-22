@@ -44,7 +44,6 @@ for:
       prerelease: false
       on:
         branch: master
-        APPVEYOR_REPO_TAG: false
 
   -
     matrix:
@@ -83,6 +82,5 @@ for:
       prerelease: false
       on:
         branch: master
-        APPVEYOR_REPO_TAG: true
 
 test: off
