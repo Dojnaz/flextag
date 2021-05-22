@@ -33,6 +33,19 @@ for:
       - path: build/*
         name: Windows
 
+    deploy:
+      release: flextag-v$(APPVEYOR_BUILD_VERSION)
+      description: 'FlexTag Build $(APPVEYOR_BUILD_VERSION)'
+      provider: GitHub
+      auth_token:
+        secure: BbGNzStA8hQ8cksKOZAgmEduEa8Zr/eKyrlFkupRV3B+HULYvHPhZtozy1heOxAM
+      artifact: /.*\.exe/
+      draft: false
+      prerelease: false
+      on:
+        branch: master
+        APPVEYOR_REPO_TAG: true
+
   -
     matrix:
       only: 
@@ -58,5 +71,18 @@ for:
     artifacts:
       - path: build/*
         name: MacOS
-        
+
+    deploy:
+      release: flextag-v$(APPVEYOR_BUILD_VERSION)
+      description: 'FlexTag Build $(APPVEYOR_BUILD_VERSION)'
+      provider: GitHub
+      auth_token:
+        secure: BbGNzStA8hQ8cksKOZAgmEduEa8Zr/eKyrlFkupRV3B+HULYvHPhZtozy1heOxAM
+      artifact: /.*\.pkg/
+      draft: false
+      prerelease: false
+      on:
+        branch: master
+        APPVEYOR_REPO_TAG: true
+
 test: off
