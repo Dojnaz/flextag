@@ -25,7 +25,6 @@ for:
       - git reset --hard HEAD
       - yarn
       - node --version
-      - npm version %APPVEYOR_BUILD_VERSION%
 
     build_script:
       - yarn build
@@ -64,7 +63,6 @@ for:
       - npm i yarn -g
       - yarn
       - node --version
-      - npm version %APPVEYOR_BUILD_VERSION% -m 'v%APPVEYOR_BUILD_VERSION%'
 
     build_script:
       - yarn build
