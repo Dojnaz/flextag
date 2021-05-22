@@ -82,5 +82,42 @@ for:
       prerelease: false
       on:
         branch: master
+  -
+    matrix:
+      only: 
+        - image: Ubuntu
+    cache:
+      - node_modules
+      - '%APPDATA%\npm-cache'
+      - '%USERPROFILE%\.electron'
+      - '%USERPROFILE%\AppData\Local\Yarn\cache'
+
+    init:
+      - git config --global core.autocrlf input
+
+    install:
+      - git reset --hard HEAD
+      - npm i yarn -g
+      - yarn
+      - node --version
+
+    build_script:
+      - yarn build
+    
+    artifacts:
+      - path: build/*
+        name: Ubuntu
+
+    deploy:
+      release: flextag-v$(APPVEYOR_BUILD_VERSION)
+      description: 'FlexTag Build $(APPVEYOR_BUILD_VERSION)'
+      provider: GitHub
+      auth_token:
+        secure: BbGNzStA8hQ8cksKOZAgmEduEa8Zr/eKyrlFkupRV3B+HULYvHPhZtozy1heOxAM
+      artifact: /.*\.pkg/
+      draft: false
+      prerelease: false
+      on:
+        branch: master
 
 test: off
