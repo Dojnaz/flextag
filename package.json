@@ -19,6 +19,7 @@
   "build": {
     "productName": "metadata-editor",
     "appId": "net.dojnaz.metadataeditor",
+    "artifactName": "${productName}-${process.env.APPVEYOR_BUILD_VERSION}.${ext}",
     "directories": {
       "output": "build"
     },
