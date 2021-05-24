@@ -100,6 +100,7 @@ for:
     install:
       - git reset --hard HEAD
       - npm i yarn -g
+      - nvm use 10.24.1
       - yarn
       - node --version
 

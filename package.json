@@ -6,7 +6,7 @@
   "license": null,
   "main": "./dist/electron/main.js",
   "engines": {
-    "node": ">=14.16.0 <15"
+    "node": ">=10 <15"
   },
   "scripts": {
     "build": "node .electron-vue/build.js && electron-builder",
