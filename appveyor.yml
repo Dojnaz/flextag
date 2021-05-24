@@ -43,6 +43,7 @@ for:
       artifact: /.*\.exe/
       draft: false
       prerelease: false
+      tag: $(APPVEYOR_REPO_TAG_NAME)
       on:
         branch: master
 
